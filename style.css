@@ -11,3 +11,19 @@
 body {
     background-color: var(--bg);
 }
+
+header {
+    position: static;
+}
+
+main {
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+aside {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
