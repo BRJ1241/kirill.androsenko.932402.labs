@@ -1,15 +1,13 @@
 ﻿:root {
-    --bg: lightblue;
-    --textcol0: red;
-    --textcol1: blue;
-    --textcol2: green;
+    --primary: lightblue;
+    --accent: #ffffff;
     --font0: Arial, sans-serif;
     --font1: Georgia, serif;
     --font2: Andale Mono, monospace;
 }
 
 body {
-    background-color: var(--bg);
+    background-color: var(--primary);
 }
 
 header {
