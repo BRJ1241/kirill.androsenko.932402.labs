@@ -1,13 +1,16 @@
 ﻿:root {
     --primary: lightblue;
     --accent: #ffffff;
+    --ge: #FF6633;
+    --geaccent: #CCCC33;
     --font0: Arial, sans-serif;
     --font1: Georgia, serif;
-    --font2: Andale Mono, monospace;
 }
+
 
 body {
     background-color: var(--primary);
+    font-family: var(--font0);
 }
 
 header {
@@ -57,4 +60,9 @@ aside {
 
 .theme-switch2:focus {
     background: linear-gradient(white, blue, red);
+}
+
+.theme-de {
+    --primary: var(--ge);
+    --font0: var(--font1);
 }
