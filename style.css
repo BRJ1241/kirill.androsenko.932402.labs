@@ -36,3 +36,25 @@ aside {
     list-style-position: inside;
     padding: 0;
 }
+
+.theme-switch1 {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px dashed #00bcd4;
+    border-radius: 4px;
+}
+
+.theme-switch2 {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px dashed #00bcd4;
+    border-radius: 4px;
+}
+
+.theme-switch1:focus {
+    background: linear-gradient(black, red, yellow);
+}
+
+.theme-switch2:focus {
+    background: linear-gradient(white, blue, red);
+}
