@@ -1,6 +1,4 @@
-﻿﻿
-<!DOCTYPE html>
-
+﻿﻿<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -8,8 +6,14 @@
     <title>Лабораторная работа №2</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
-        h1 {
-            color: #2B006B;
+        .skills {
+            text-align: center;
+        }
+        .skills ul {
+            display: inline-block;
+            text-align: left;
+            list-style-position: inside;
+            padding: 0;
         }
     </style>
 </head>
@@ -35,14 +39,12 @@
             </ul>
         </section>
         <section>
-            <div style="color: #2B006B; width: 400px; height: 300px; display: flex; flex-direction: column; ">
                 <h2>Проекты</h2>
                 <ol>
                     <li>Языковой дневник</li>
                     <li>Визуальный словарь-коллаж</li>
                     <li>Кулинарный проект «Рецепт на иностранном языке»</li>
                 </ol>
-            </div>
         </section>
     </main>
     <script src="script.js"></script>
@@ -62,7 +64,7 @@
 
     <section>
         <h2> Обратная связь </h2>
-        <form action="#" method="post">
+        <form action="#" method="post" style="display: flex; flex-direction: column;">
             <p>
                 <label for="name">Ваше имя:</label><br>
                 <input type="text" id="name" name="name" placeholder="Иван" required>
