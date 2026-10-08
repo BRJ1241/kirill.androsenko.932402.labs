@@ -1,0 +1,94 @@
+﻿﻿:root {
+    --primary: lightblue;
+    --accent: #ffffff;
+    --ge: #FF6633;
+    --geaccent: #CCCC33;
+    --font0: Arial, sans-serif;
+    --font1: Georgia, serif;
+}
+
+
+body {
+    background-color: var(--primary);
+    font-family: var(--font0);
+}
+
+header {
+    position: static;
+}
+
+main {
+    position: relative;
+    top: 10px;
+    left: 40px;
+}
+
+aside {
+    position: absolute;
+    top: 300px;
+    right: 100px;
+}
+
+.skills {
+    text-align: center;
+}
+
+    .skills ul {
+        display: inline-block;
+        text-align: left;
+        list-style-position: inside;
+        padding: 0;
+    }
+
+.theme-switch1 {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px dashed #00bcd4;
+    border-radius: 4px;
+}
+
+.theme-switch2 {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px dashed #00bcd4;
+    border-radius: 4px;
+}
+
+.theme-switch1:focus {
+    background: linear-gradient(black, red, yellow);
+}
+
+.theme-switch2:focus {
+    background: linear-gradient(white, blue, red);
+}
+
+.theme-de {
+    --primary: var(--ge);
+    --font0: var(--font1);
+}
+
+button:visited {
+    color: purple;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #33FF00;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+    .btn:visited {
+        background-color: purple;
+    }
