@@ -1,0 +1,90 @@
+﻿﻿:root {
+    --primary: lightblue;
+    --accent: #ffffff;
+    --ge: #FF6633;
+    --geaccent: #CCCC33;
+    --font0: Arial, sans-serif;
+    --font1: Georgia, serif;
+}
+
+h1, h2 {
+    color: #2B006B;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: var(--font0);
+}
+
+header {
+    position: static;
+}
+
+main {
+    position: relative;
+    padding-right: 340px;
+}
+
+aside {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 15px 0;
+    border-top: 1px solid #999;
+    color: #333;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.theme-switch1, .theme-switch2 {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px dashed #00bcd4;
+    border-radius: 4px;
+}
+
+    .theme-switch1:focus {
+        background: linear-gradient(black, red, yellow);
+    }
+
+    .theme-switch2:focus {
+        background: linear-gradient(white, blue, red);
+    }
+
+.theme-de {
+    --primary: var(--ge);
+    --font0: var(--font1);
+}
+
+:focus, button:focus, .btn:focus {
+    outline: 2px solid #2B006B;
+    outline-offset: 2px;
+}
+
+button:hover, .btn:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #33FF00;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+    .btn:visited {
+        color: purple;
+    }
