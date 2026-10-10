@@ -88,3 +88,23 @@ button:active {
     .btn:visited {
         color: purple;
     }
+
+.nav-menu {
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.cards {
+    display: flex; 
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 1 1 220px;
+    max-width: 280px; 
+}
