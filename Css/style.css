@@ -21,15 +21,24 @@ header {
 }
 
 main {
-    position: relative;
-    padding-right: 340px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    align-items: start;
+    padding-right: 0; 
 }
 
+    main > section,
+    main > figure {
+        grid-column: 1;
+    }
+
 aside {
-    position: relative;
-    top: 0px;
-    right: 0px;
-    width: 300px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    position: sticky;
+    top: 20px;
 }
 
 footer {
@@ -127,6 +136,15 @@ button:active {
 }
 
 @media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+        padding-right: 0;
+    }
+    aside {
+        grid-column: 1;
+        grid-row: auto;
+        position: static;
+    }
     .card {
         flex: 0 0 calc((100% - 20px) / 2);
     }
