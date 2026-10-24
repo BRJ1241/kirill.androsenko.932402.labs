@@ -1,0 +1,213 @@
+﻿:root {
+    --primary: lightblue;
+    --accent: #ffffff;
+    --ge: #FF6633;
+    --geaccent: #CCCC33;
+    --font0: Arial, sans-serif;
+    --font1: Georgia, serif;
+}
+
+h1, h2, h3 {
+    color: #2B006B;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: var(--font0);
+}
+
+header {
+    position: static;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 20px;
+    align-items: start;
+    padding-right: 0; 
+}
+
+    main > section,
+    main > figure {
+        grid-column: 1;
+    }
+
+aside {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    position: sticky;
+    top: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 15px 0;
+    border-top: 1px solid #999;
+    color: #333;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.theme-switch1, .theme-switch2 {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px dashed #00bcd4;
+    border-radius: 4px;
+}
+
+    .theme-switch1:focus {
+        background: linear-gradient(black, red, yellow);
+    }
+
+    .theme-switch2:focus {
+        background: linear-gradient(white, blue, red);
+    }
+
+.theme-de {
+    --primary: var(--ge);
+    --font0: var(--font1);
+}
+
+:focus, button:focus, .btn:focus {
+    outline: 2px solid #2B006B;
+    outline-offset: 2px;
+}
+
+button:hover, .btn:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #33FF00;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+    .btn:visited {
+        color: purple;
+    }
+
+input,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font: inherit; 
+    background-color: #fff;
+    color: #222;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical; 
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+
+}
+
+input:focus,
+textarea:focus {
+        outline: 2px solid #2B006B; 
+        outline-offset: 2px;
+        border-color: #2B006B; 
+        box-shadow: 0 0 0 3px rgba(43, 0, 107, 0.15);
+}
+
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 calc((100% - 40px) / 3);
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.phrase {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr;
+        padding-right: 0;
+    }
+    aside {
+        grid-column: 1;
+        grid-row: auto;
+        position: static;
+    }
+    .card {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+    .grid-gallery {
+            grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+    .nav-menu {
+        gap: 10px;
+    }
+    .card {
+        flex: 0 0 100%;
+    }
+    .grid-gallery {
+        grid-template-columns: 1fr;
+
+    }
+    main {
+        padding-right: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html, body {
+    overflow-x: hidden;
+}

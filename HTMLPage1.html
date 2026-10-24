@@ -1,0 +1,167 @@
+﻿﻿﻿
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №3</title>
+    <link rel="stylesheet" type="text/css" href="Css/style.css">
+    <style>
+        .skills {
+            text-align: center;
+        }
+
+            .skills ul {
+                display: inline-block;
+                text-align: left;
+                list-style-position: inside;
+                padding: 0;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Андросенко Кирилл Евгеньевич</h1>
+        <p>Студент группы 932402</p>
+        <p>Языковой энтузиаст и переводчик</p>
+        <p>
+            Переключатель темы:
+            <button type="button" class="theme-switch1" tabindex="0" id="btnGe"> Немецкий</button>
+            <button type="button" class="theme-switch2" tabindex="0" id="btnRu"> Русский</button>
+        </p>
+    </header>
+    <nav>
+        <ul class="nav-menu">
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Обратная связь</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="skills" class="skills">
+            <h2>Навыки</h2>
+            <ul>
+                <li>Перевод</li>
+                <li>Изучение языков</li>
+                <li>Межкультурная коммуникация</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Проекты</h2>
+            <ol>
+                <li>Языковой дневник</li>
+                <li>Визуальный словарь-коллаж</li>
+                <li>Кулинарный проект «Рецепт на иностранном языке»</li>
+            </ol>
+        </section>
+        <aside>
+            <h2>Доп.информация</h2>
+            <ul>
+                <li><strong>Город:</strong> Томск</li>
+                <li><strong>Возраст:</strong> 19 лет</li>
+                <li><strong>Языки:</strong> Русский - родной, Английский - изучаемый</li>
+            </ul>
+        </aside>
+        <section id="languages">
+            <h2>Изучаемые языки</h2>
+            <div class="cards">
+                <article class="card">
+                    <img src="PngFiles/flagru.png" alt="Флаг России" width="80" height="50">
+                    <h3 lang="ru">Русский</h3>
+                    <p>Родной</p>
+                </article>
+                <article class="card">
+                    <img src="PngFiles/flagen.png" alt="Флаг Великобритании" width="80" height="50">
+                    <h3 lang="en">English</h3>
+                    <p>B1 - Intermediate</p>
+                </article>
+                <article class="card">
+                    <img src="PngFiles/flagge.png" alt="Флаг Германии" width="80" height="50">
+                    <h3 lang="de">Deutsch</h3>
+                    <p>A1 - Beginner</p>
+                </article>
+            </div>
+        </section>
+        <section id="phrases">
+            <h2>Фраза недели</h2>
+            <div class="grid-gallery">
+                <article class="phrase" lang="ru">
+                    <h3>Русский</h3>
+                    <p class="phrase-text">Век живи — век учись</p>
+                    <div class="translations">
+                        <div class="translation">
+                            <p><span class="lang-label">EN:</span> <span lang="en">Live and learn</span></p>
+                            <p class="transcription">[lɪv ænd lɜːn]</p>
+                        </div>
+                        <div class="translation">
+                            <p><span class="lang-label">DE:</span> <span lang="de">Man lernt nie aus</span></p>
+                            <p class="transcription">[ˈman ˈlɛrnt ˈniː ˈaʊs]</p>
+                        </div>
+                    </div>
+                    <span class="audio-icon" aria-label="Аудио">🔊</span>
+                </article>
+                <article class="phrase" lang="en">
+                    <h3>English</h3>
+                    <p class="phrase-text">Actions speak louder than words</p>
+                    <div class="translations">
+                        <div class="translation">
+                            <p><span class="lang-label">RU:</span> <span lang="ru">Не по словам судят, а по делам</span></p>
+                        </div>
+                        <div class="translation">
+                            <p><span class="lang-label">DE:</span> <span lang="de">Taten sagen mehr als Worte</span></p>
+                            <p class="transcription">[ˈtaːtn ˈzaːɡn meːɐ̯ als ˈvɔʁtə]</p>
+                        </div>
+                    </div>
+                    <span class="audio-icon" aria-label="Аудио">🔊</span>
+                </article>
+                <article class="phrase" lang="de">
+                    <h3>Deutsch</h3>
+                    <p class="phrase-text">Übung macht den Meister</p>
+                    <div class="translations">
+                        <div class="translation">
+                            <p><span class="lang-label">RU:</span> <span lang="ru">Повторение — мать учения</span></p>
+                        </div>
+                        <div class="translation">
+                            <p><span class="lang-label">EN:</span> <span lang="en">Practice makes perfect</span></p>
+                            <p class="transcription">[ˈpræktɪs meɪks ˈpɜːfɛkt]</p>
+                        </div>
+                    </div>
+                    <span class="audio-icon" aria-label="Аудио">🔊</span>
+                </article>
+
+            </div>
+        </section>
+        <figure>
+            <img src="PngFiles/image.png" alt="Моё фото" width="500" height="350">
+        </figure>
+
+        <section id="contact">
+            <h2> Обратная связь </h2>
+            <form action="#" method="post" style="display: flex; flex-direction: column;">
+                <p>
+                    <label for="name">Ваше имя:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Иван" required>
+                </p>
+                <p>
+                    <label for="email">Ваш email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Ivan@yandex.ru" required>
+                </p>
+                <p>
+                    <label for="message">Сообщение:</label><br>
+                    <textarea id="message" name="message" placeholder="Ваше сообщение"></textarea>
+                </p>
+                <p>
+                    <button type="submit">Отправить</button>
+                    <a href="https://github.com/BRJ1241/kirill.androsenko.932402.labs/tree/Lab2" class="btn">Перейти</a>
+                </p>
+            </form>
+        </section>
+    </main>
+    <script src="Js/script.js"></script>
+
+    <footer>
+        <p><small>2026 Андросенко Кирилл</small></p>
+        <p><small>Страница создана: 10 сентября 2026 г.</small></p>
+    </footer>
+</body>
+</html>
