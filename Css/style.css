@@ -98,6 +98,38 @@ button:active {
         color: purple;
     }
 
+input,
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #999;
+    border-radius: 6px;
+    font: inherit; 
+    background-color: #fff;
+    color: #222;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical; 
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+
+}
+
+input:focus,
+textarea:focus {
+        outline: 2px solid #2B006B; 
+        outline-offset: 2px;
+        border-color: #2B006B; 
+        box-shadow: 0 0 0 3px rgba(43, 0, 107, 0.15);
+}
+
 .nav-menu {
     display: flex;
     flex-wrap: wrap;
