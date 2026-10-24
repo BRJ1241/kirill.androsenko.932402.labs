@@ -63,9 +63,12 @@ console.log('Среднее количество слов за день:', avera
 console.log(`Дней с малым прогрессом: ${lowDays} из ${wordsPerDay.length}`);
 console.log(`Это ${lowDaysPercent.toFixed(1)}% от всех дней.`);
 alert(`Всего выучено ${totalWords} слов, в ${highDays.length} днях прогресс был высоким.`);
-if (average > 30) {
+if (average > 30)
+{
     console.log('Отличный темп изучения языка!');
-} else {
+}
+else
+{
     console.log('Старайся учить больше слов в день.');
 }
 
