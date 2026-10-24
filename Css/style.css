@@ -107,8 +107,7 @@ button:active {
 }
 
 .card {
-    flex: 1 1 220px;
-    max-width: 280px; 
+    flex: 0 0 calc((100% - 40px) / 3);
 }
 
 .grid-gallery {
@@ -128,17 +127,26 @@ button:active {
 }
 
 @media (max-width: 900px) {
-    .grid-gallery {
-        grid-template-columns: repeat(2, 1fr);
+    .card {
+        flex: 0 0 calc((100% - 20px) / 2);
     }
+    .grid-gallery {
+            grid-template-columns: repeat(2, 1fr);
+
+    }
+
 }
 
 @media (max-width: 600px) {
     .nav-menu {
         gap: 10px;
     }
+    .card {
+        flex: 0 0 100%;
+    }
     .grid-gallery {
         grid-template-columns: 1fr;
+
     }
     main {
         padding-right: 0;
