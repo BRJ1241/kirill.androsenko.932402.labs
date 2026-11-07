@@ -25,8 +25,7 @@
         <p>Языковой энтузиаст и переводчик</p>
         <p>
             Переключатель темы:
-            <button type="button" class="theme-switch1" tabindex="0" id="btnGe"> Немецкий</button>
-            <button type="button" class="theme-switch2" tabindex="0" id="btnRu"> Русский</button>
+            <button type="button" id="themeBtn" tabindex="0">Тёмная тема</button>
         </p>
     </header>
     <nav>
@@ -127,6 +126,34 @@
                     </div>
                     <span class="audio-icon" aria-label="Аудио">🔊</span>
                 </article>
+
+                <section id="dictionary-section">
+                    <h2>Мой словарь</h2>
+
+                    <div class="dict-controls">
+                        <form id="addForm">
+                            <input type="text" id="wordInput" placeholder="Слово" required>
+                            <input type="text" id="transInput" placeholder="Перевод" required>
+                            <button type="submit">Добавить слово</button>
+                        </form>
+
+                        <div class="dict-actions">
+                            <button type="button" id="toggleBtn">Скрыть словарь</button>
+                            <button type="button" id="clearBtn">Очистить словарь</button>
+                        </div>
+                    </div>
+
+                    <div id="dictionary">
+                        <p id="counter">Всего слов: 0</p>
+                        <table>
+                            <thead>
+                                <tr><th>Слово</th><th>Перевод</th><th></th></tr>
+                            </thead>
+                            <tbody id="dictBody"></tbody>
+                        </table>
+                        <p id="emptyMsg" class="hidden">Словарь пуст.</p>
+                    </div>
+                </section>
 
             </div>
         </section>
