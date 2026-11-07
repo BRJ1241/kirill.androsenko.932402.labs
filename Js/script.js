@@ -73,7 +73,20 @@ else
 }
 
 
-
+const Skills = document.getElementById('skills');
+const Projects = document.getElementById('projects'); 
+const BtnGe = document.querySelector('#btnGe');
+const TS1 = document.querySelector('.theme-switch1');
+const Li = document.querySelector('li');
+const InputText = document.querySelector('input[type="text"]');
+const allInputs = document.querySelectorAll('input');
+console.log(Skills);
+console.log(Projects); 
+console.log(BtnGe);
+console.log(TS1); 
+console.log(Li);
+console.log(InputText);
+console.log(allInputs);
 
 document.querySelector('.theme-switch1').addEventListener('click', () => {
     document.body.classList.add('theme-de');
